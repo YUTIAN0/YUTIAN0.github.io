@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "安装jekyll"
+date:   2019-09-07 22:56:19 +0800
+categories: jekyll update
+---
 ## 缺失/usr/local/share/gems/gems/sassc-2.2.0/lib/sassc/libsass.so
 [root@DESKTOP-LJ3J01Q yutian]# jekyll -v
 Traceback (most recent call last):
