@@ -3,6 +3,7 @@ layout: post
 title:  "jekyll -v 缺失libsass.so动态链接库"
 date:   2019-09-07 22:56:19 +0800
 categories: [blog]
+tags: [jekyll,fedora]
 ---
 
 # jekyll -v 缺失libsass.so动态链接库
