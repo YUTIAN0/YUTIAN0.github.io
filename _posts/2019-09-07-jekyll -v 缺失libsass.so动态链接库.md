@@ -9,9 +9,9 @@ Windows Subsystem for Linux fedora30
 
 ## 缺失/usr/local/share/gems/gems/sassc-2.2.0/lib/sassc/libsass.so
 
-'''
-[root@DESKTOP-LJ3J01Q yutian]# jekyll -v
-Traceback (most recent call last):
+
+    [root@DESKTOP-LJ3J01Q yutian]# jekyll -v
+        Traceback (most recent call last):
         21: from /usr/local/bin/jekyll:23:in `<main>'
         20: from /usr/local/bin/jekyll:23:in `load'
         19: from /usr/local/share/gems/gems/jekyll-4.0.0/exe/jekyll:8:in `<top (required)>'
@@ -33,17 +33,17 @@ Traceback (most recent call last):
          3: from /usr/local/share/gems/gems/sassc-2.2.0/lib/sassc/native.rb:10:in `<module:Native>'
          2: from /usr/local/share/gems/gems/ffi-1.11.1/lib/ffi/library.rb:99:in `ffi_lib'
          1: from /usr/local/share/gems/gems/ffi-1.11.1/lib/ffi/library.rb:99:in `map'
-/usr/local/share/gems/gems/ffi-1.11.1/lib/ffi/library.rb:145:in `block in ffi_lib': Could not open library '/usr/local/share/gems/gems/sassc-2.2.0/lib/sassc/libsass.so': /usr/local/share/gems/gems/sassc-2.2.0/lib/sassc/libsass.so: cannot open shared object file: No such file or directory (LoadError)
-'''
+    /usr/local/share/gems/gems/ffi-1.11.1/lib/ffi/library.rb:145:in `block in ffi_lib': Could not open library '/usr/local/share/gems/gems/sassc-2.2.0/lib/sassc/libsass.so': /usr/local/share/gems/gems/sassc-2.2.0/lib/sassc/libsass.so: cannot open shared object file: No such file or directory (LoadError)
+
 
 解决方法
 
 在 https://apps.fedoraproject.org/packages/rubygem-sassc/下载rubygem-sassc-2.2.0-1.fc31.x86_64.rpm 安装
 
-'''
-[root@DESKTOP-LJ3J01Q yutian]# jekyll  -v
-jekyll 4.0.0
-'''
+
+    [root@DESKTOP-LJ3J01Q yutian]# jekyll  -v
+    jekyll 4.0.0
+
 ## 注
 在 https://apps.fedoraproject.org/packages/rubygem-sassc/ 没有fc30软件包，下载安装fc31的软件包也可以正常使用
 
