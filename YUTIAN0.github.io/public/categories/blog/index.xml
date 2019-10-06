@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on My New Hugo Site</title>
+    <link>http://example.org/categories/blog/</link>
+    <description>Recent content in blog on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Sep 2019 21:38:41 +0800</lastBuildDate>
+    
+	<atom:link href="http://example.org/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JetBrians IDEA 使用api文档 </title>
+      <link>http://example.org/2019-09-27-05/</link>
+      <pubDate>Fri, 27 Sep 2019 21:38:41 +0800</pubDate>
+      
+      <guid>http://example.org/2019-09-27-05/</guid>
+      <description> JetBrians IDEA 使用api文档 jdk 11 api文档 在线地址https://docs.oracle.com/en/java/javase/11/docs/api/index.html 离线下载地址 https://www.oracle.com/technetwork/java/javase/documentation/jdk11-doc-downloads-5097203.html 使用idea时，鼠标指在上面没有显示说明 打开File-Settings&amp;hellip;,勾选如图所示选项 打开File-&amp;gt;Project Structure 选择文档位置 </description>
+    </item>
+    
+    <item>
+      <title>Markdown 基本语法</title>
+      <link>http://example.org/2019-09-08-03/</link>
+      <pubDate>Sun, 08 Sep 2019 18:15:00 +0800</pubDate>
+      
+      <guid>http://example.org/2019-09-08-03/</guid>
+      <description>Markdown 基本语法 Markdown 标题 一级标题 ===(任意两个以上) # 一级标题 ## 二级标题 二级标题 --- ### 三级标题 #### 四级标题 ##### 五级标题 ###### 六级标题  显示效果
+一级标题 一级标题 二级标题 二级标题 三级标题 四级标题 五级标题 六级标题 Markdown 段落 段落的前后要有空行，所谓的空行是指没有文字内容。若想在段内强制换行的方式是使用两个以上空格加上回车（引用中换行省略回车）
+字体  *斜体文本* _斜体文本_ **粗体文本** __粗体文本__ ***粗斜体文本*** ___粗斜体文本___ ~~~~ *斜体文本* _斜体文本_ **粗体文本** __粗体文本__ ***粗斜体文本*** ___粗斜体文本___ ### 线条  ~~删除线~ 带下划线文本 文本 [^脚注] 水平线
+如果一行中只有三个以上的连字符, 星号, 或者下划线则会在该位置生成一个  标签. 星号和连字符之间的空格也是允许的
+ ~~删除线~ &amp;lt;u&amp;gt;下划线&amp;lt;/u&amp;gt; 文本 [^脚注] 水平线 --- *** _ _ _ ## Markdown 列表 ### 无序列表使用星号, 加号, 和连字符 -- 这些符号是可互换的 -- 最为列表标记:   一 二 三</description>
+    </item>
+    
+    <item>
+      <title>Markdown 语法</title>
+      <link>http://example.org/2019-09-08-04/</link>
+      <pubDate>Sun, 08 Sep 2019 18:15:00 +0800</pubDate>
+      
+      <guid>http://example.org/2019-09-08-04/</guid>
+      <description>注:以下内容来自https://yuhongjun.github.io/  目录
+{:toc} 1. 斜体和粗体 *斜体*或_斜体_ **粗体** ***加粗斜体*** ~~删除线~~  view
+  *斜体*或斜体
+粗体
+加粗斜体
+删除线
+2. 分级标题 # 一级标题 ## 二级标题 ### 三级标题 #### 四级标题 ##### 五级标题 ###### 六级标题  由于用了[TOC]标记编辑器会把所有标题写到目录大纲中，在这里写的演示标题也会列进去，所以就不演示了。同学们自己在编辑器中观察，很简单，一级标题字号最大，依级递减。
+3. 超链接 Markdown 支持两种形式的链接语法： 行内式和参考式两种形式，行内式一般使用较多。
+3.1. 行内式 语法说明：
+[]里写链接文字，()里写链接地址, ()中的”“中可以为链接指定title属性，title属性可加可不加。title属性的效果是鼠标悬停在链接上会出现指定的 title文字。链接地址与链接标题前有一个空格。
+欢迎来到[Demi的随笔和技术空间](https://yuhongjun.github.io/) 欢迎来到[Demi的随笔和技术空间](https://yuhongjun.github.io/ &amp;quot;Demi的随笔和技术空间&amp;quot;)  view
+欢迎来到Demi的随笔和技术空间
+欢迎来到Demi的随笔和技术空间
+3.2. 参考式 参考式超链接一般用在学术论文上面，或者另一种情况，如果某一个链接在文章中多处使用，那么使用引用 的方式创建链接将非常好，它可以让你对链接进行统一的管理。
+语法说明： 参考式链接分为两部分，文中的写法 [链接文字][链接标记]，在文本的任意位置添加[链接标记]:链接地址 “链接标题”，链接地址与链接标题前有一个空格。
+如果链接文字本身可以做为链接标记，你也可以写成[链接文字][] [链接文字]：链接地址的形式，见代码的最后一行。
+我经常去的几个网站[Google][1],[Demi的随笔和技术空间][2],[Demi的随笔和技术空间][]。  我经常去的几个网站Google,Demi的随笔和技术空间,Demi的随笔和技术空间。
+3.3. 自动链接 语法说明： Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要是用&amp;lt;&amp;gt;包起来， Markdown 就会自动把它转成链接。一般网址的链接文字就和链接地址一样，例如：</description>
+    </item>
+    
+    <item>
+      <title>GitHub Pages 搭建</title>
+      <link>http://example.org/2019-09-07-01/</link>
+      <pubDate>Sat, 07 Sep 2019 22:56:19 +0800</pubDate>
+      
+      <guid>http://example.org/2019-09-07-01/</guid>
+      <description>GitHub Pages 搭建 GitHub帮助文档 https://help.github.com/
+注册GitHup账号 https://github.com/
+已经注册或已有账号 创建新的仓库 仓库名为 用户名.github.io
+修改已有的仓库名为 用户名.github.io
+选择主题，添加自己的域名
+添加自己的内容到index.md文件
+访问 https://yutian0.github.io
+## 克隆仓库到本地进行修改
+git clone git@github.com:YUTIAN0/YUTIAN0.github.io.git 或 git clone https://github.com/YUTIAN0/YUTIAN0.github.io.git</description>
+    </item>
+    
+    <item>
+      <title>jekyll -v 缺失libsass.so动态链接库</title>
+      <link>http://example.org/2019-09-07-02/</link>
+      <pubDate>Sat, 07 Sep 2019 22:56:19 +0800</pubDate>
+      
+      <guid>http://example.org/2019-09-07-02/</guid>
+      <description>jekyll -v 缺失libsass.so动态链接库 环境 Windows Subsystem for Linux fedora30
+缺失/usr/local/share/gems/gems/sassc-2.2.0/lib/sassc/libsass.so  [root@DESKTOP-LJ3J01Q yutian]# jekyll -v Traceback (most recent call last): 21: from /usr/local/bin/jekyll:23:in `&amp;lt;main&amp;gt;&#39; 20: from /usr/local/bin/jekyll:23:in `load&#39; 19: from /usr/local/share/gems/gems/jekyll-4.0.0/exe/jekyll:8:in `&amp;lt;top (required)&amp;gt;&#39; 18: from /usr/share/rubygems/rubygems/core_ext/kernel_require.rb:54:in `require&#39; 17: from /usr/share/rubygems/rubygems/core_ext/kernel_require.rb:54:in `require&#39; 16: from /usr/local/share/gems/gems/jekyll-4.0.0/lib/jekyll.rb:206:in `&amp;lt;top (required)&amp;gt;&#39; 15: from /usr/share/rubygems/rubygems/core_ext/kernel_require.rb:54:in `require&#39; 14: from /usr/share/rubygems/rubygems/core_ext/kernel_require.rb:54:in `require&#39; 13: from /usr/local/share/gems/gems/jekyll-sass-converter-2.0.0/lib/jekyll-sass-converter.rb:4:in `&amp;lt;top (required)&amp;gt;&#39; 12: from /usr/share/rubygems/rubygems/core_ext/kernel_require.rb:54:in `require&#39; 11: from /usr/share/rubygems/rubygems/core_ext/kernel_require.rb:54:in `require&#39; 10: from /usr/local/share/gems/gems/jekyll-sass-converter-2.</description>
+    </item>
+    
+  </channel>
+</rss>
