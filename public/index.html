@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My New Hugo Site</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="http://example.org/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="http://example.org/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="http://example.org/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="http://example.org/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="http://example.org/index.xml" rel="alternate" type="application/rss+xml" title="My New Hugo Site" />
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://example.org/"><h1>My New Hugo Site</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="http://example.org/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="posts">
+<article class="post">
+  <h1 class="post-title">
+    <a href="http://example.org/post/2019-10-06-09/">miniDLNA配置 </a>
+  </h1>
+  <time datetime="2019-10-06T21:48:18&#43;0800" class="post-date">Sun, Oct 6, 2019</time>
+  miniDLNA配置 安装 sudo dnf install minidlna
+配置文件位置/etc/minidlna.conf
+sudo vim /etc/minidlna.conf media_dir=/opt #资源文件路径  启动服务sudo systemctl start minidlna
+添加为开机启动sudo systemctl enable minidlna
+取消开机启动sudo systemctl disable minidlna
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://example.org/post/2019-10-02-08/">CentOS 开机自动挂载硬盘</a>
+  </h1>
+  <time datetime="2019-10-02T21:45:37&#43;0800" class="post-date">Wed, Oct 2, 2019</time>
+  CentOS 开机自动挂载硬盘 /etc/fstab是Linux中负责开机引导自动挂载储存设备的配置文件
+(base) [yutian@localhost ~]$ cat /etc/fstab # # /etc/fstab # Created by anaconda on Mon Sep 30 01:35:47 2019 # # Accessible filesystems, by reference, are maintained under '/dev/disk/'. # See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info. # # After editing this file, run 'systemctl daemon-reload' to update systemd # units generated from this file. # /dev/mapper/cl-root / xfs defaults 0 0 UUID=f69a867c-4ded-44bb-b0b0-5f4b1abfc12d /boot ext4 defaults 1 2 UUID=42FE-EDAC /boot/efi vfat umask=0077,shortname=winnt 0 2 /dev/mapper/cl-home /home xfs defaults 0 0 /dev/mapper/cl-swap swap swap defaults 0 0 /dev/md126 /mnt/data ext4 defaults 0 0  共有六列，列之间使用空格分隔，每一行就是一个文件系统
+  
+  <div class="read-more-link">
+    <a href="/post/2019-10-02-08/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://example.org/post/2019-09-30-07/">Centos 8 安装常用软件</a>
+  </h1>
+  <time datetime="2019-09-30T20:21:16&#43;0800" class="post-date">Mon, Sep 30, 2019</time>
+  Centos 8安装常用软件
+安装epel sudo dnf install epel-release
+安装 RPMFusion
+安装文档https://rpmfusion.org/Configuration sudo dnf install https://download1.rpmfusion.org/free/el/rpmfusion-free-release-8.noarch.rpm
+sudo dnf install https://download1.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-8.noarch.rpm
+更新
+sudo dnf update
+安装常用软件
+sudo dnf install gcc gcc-c++ wget git tree iftop ioftp vim samba samba-client samba-common
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://example.org/post/2019-09-27-06/"> CentOS 8发布</a>
+  </h1>
+  <time datetime="2019-09-27T22:49:08&#43;0800" class="post-date">Fri, Sep 27, 2019</time>
+  CentOS 8 发布 从redhat 8发布以来，一直等待CentOS 8的发布，足足等了三四个月，经常在https://wiki.centos.org/About/Building_8上查看构建工作，终于在 2019-09-24 正式发行。 CentOS 8构建时间表
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://example.org/post/2019-09-27-05/">JetBrians IDEA 使用api文档 </a>
+  </h1>
+  <time datetime="2019-09-27T21:38:41&#43;0800" class="post-date">Fri, Sep 27, 2019</time>
+   JetBrians IDEA 使用api文档 jdk 11 api文档 在线地址https://docs.oracle.com/en/java/javase/11/docs/api/index.html 离线下载地址 https://www.oracle.com/technetwork/java/javase/documentation/jdk11-doc-downloads-5097203.html 使用idea时，鼠标指在上面没有显示说明 打开File-Settings&hellip;,勾选如图所示选项 打开File-&gt;Project Structure 选择文档位置 
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://example.org/post/2019-09-08-03/">Markdown 基本语法</a>
+  </h1>
+  <time datetime="2019-09-08T18:15:00&#43;0800" class="post-date">Sun, Sep 8, 2019</time>
+  Markdown 基本语法 Markdown 标题 一级标题 ===(任意两个以上) # 一级标题 ## 二级标题 二级标题 --- ### 三级标题 #### 四级标题 ##### 五级标题 ###### 六级标题  显示效果
+一级标题 一级标题 二级标题 二级标题 三级标题 四级标题 五级标题 六级标题 Markdown 段落 段落的前后要有空行，所谓的空行是指没有文字内容。若想在段内强制换行的方式是使用两个以上空格加上回车（引用中换行省略回车）
+字体  *斜体文本* _斜体文本_ **粗体文本** __粗体文本__ ***粗斜体文本*** ___粗斜体文本___ ~~~~ *斜体文本* _斜体文本_ **粗体文本** __粗体文本__ ***粗斜体文本*** ___粗斜体文本___ ### 线条  ~~删除线~ 带下划线文本 文本 [^脚注] 水平线
+如果一行中只有三个以上的连字符, 星号, 或者下划线则会在该位置生成一个  标签. 星号和连字符之间的空格也是允许的
+ ~~删除线~ &lt;u&gt;下划线&lt;/u&gt; 文本 [^脚注] 水平线 --- *** _ _ _ ## Markdown 列表 ### 无序列表使用星号, 加号, 和连字符 -- 这些符号是可互换的 -- 最为列表标记:   一 二 三
+  
+  <div class="read-more-link">
+    <a href="/post/2019-09-08-03/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://example.org/post/2019-09-08-04/">Markdown 语法</a>
+  </h1>
+  <time datetime="2019-09-08T18:15:00&#43;0800" class="post-date">Sun, Sep 8, 2019</time>
+  注:以下内容来自https://yuhongjun.github.io/  目录
+{:toc} 1. 斜体和粗体 *斜体*或_斜体_ **粗体** ***加粗斜体*** ~~删除线~~  view
+  *斜体*或斜体
+粗体
+加粗斜体
+删除线
+2. 分级标题 # 一级标题 ## 二级标题 ### 三级标题 #### 四级标题 ##### 五级标题 ###### 六级标题  由于用了[TOC]标记编辑器会把所有标题写到目录大纲中，在这里写的演示标题也会列进去，所以就不演示了。同学们自己在编辑器中观察，很简单，一级标题字号最大，依级递减。
+3. 超链接 Markdown 支持两种形式的链接语法： 行内式和参考式两种形式，行内式一般使用较多。
+3.1. 行内式 语法说明：
+[]里写链接文字，()里写链接地址, ()中的”“中可以为链接指定title属性，title属性可加可不加。title属性的效果是鼠标悬停在链接上会出现指定的 title文字。链接地址与链接标题前有一个空格。
+欢迎来到[Demi的随笔和技术空间](https://yuhongjun.github.io/) 欢迎来到[Demi的随笔和技术空间](https://yuhongjun.github.io/ &quot;Demi的随笔和技术空间&quot;)  view
+欢迎来到Demi的随笔和技术空间
+欢迎来到Demi的随笔和技术空间
+3.2. 参考式 参考式超链接一般用在学术论文上面，或者另一种情况，如果某一个链接在文章中多处使用，那么使用引用 的方式创建链接将非常好，它可以让你对链接进行统一的管理。
+语法说明： 参考式链接分为两部分，文中的写法 [链接文字][链接标记]，在文本的任意位置添加[链接标记]:链接地址 “链接标题”，链接地址与链接标题前有一个空格。
+如果链接文字本身可以做为链接标记，你也可以写成[链接文字][] [链接文字]：链接地址的形式，见代码的最后一行。
+我经常去的几个网站[Google][1],[Demi的随笔和技术空间][2],[Demi的随笔和技术空间][]。  我经常去的几个网站Google,Demi的随笔和技术空间,Demi的随笔和技术空间。
+3.3. 自动链接 语法说明： Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要是用&lt;&gt;包起来， Markdown 就会自动把它转成链接。一般网址的链接文字就和链接地址一样，例如：
+  
+  <div class="read-more-link">
+    <a href="/post/2019-09-08-04/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://example.org/post/2019-09-07-01/">GitHub Pages 搭建</a>
+  </h1>
+  <time datetime="2019-09-07T22:56:19&#43;0800" class="post-date">Sat, Sep 7, 2019</time>
+  GitHub Pages 搭建 GitHub帮助文档 https://help.github.com/
+注册GitHup账号 https://github.com/
+已经注册或已有账号 创建新的仓库 仓库名为 用户名.github.io
+修改已有的仓库名为 用户名.github.io
+选择主题，添加自己的域名
+添加自己的内容到index.md文件
+访问 https://yutian0.github.io
+## 克隆仓库到本地进行修改
+git clone git@github.com:YUTIAN0/YUTIAN0.github.io.git 或 git clone https://github.com/YUTIAN0/YUTIAN0.github.io.git
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://example.org/post/2019-09-07-02/">jekyll -v 缺失libsass.so动态链接库</a>
+  </h1>
+  <time datetime="2019-09-07T22:56:19&#43;0800" class="post-date">Sat, Sep 7, 2019</time>
+  jekyll -v 缺失libsass.so动态链接库 环境 Windows Subsystem for Linux fedora30
+缺失/usr/local/share/gems/gems/sassc-2.2.0/lib/sassc/libsass.so  [root@DESKTOP-LJ3J01Q yutian]# jekyll -v Traceback (most recent call last): 21: from /usr/local/bin/jekyll:23:in `&lt;main&gt;' 20: from /usr/local/bin/jekyll:23:in `load' 19: from /usr/local/share/gems/gems/jekyll-4.0.0/exe/jekyll:8:in `&lt;top (required)&gt;' 18: from /usr/share/rubygems/rubygems/core_ext/kernel_require.rb:54:in `require' 17: from /usr/share/rubygems/rubygems/core_ext/kernel_require.rb:54:in `require' 16: from /usr/local/share/gems/gems/jekyll-4.0.0/lib/jekyll.rb:206:in `&lt;top (required)&gt;' 15: from /usr/share/rubygems/rubygems/core_ext/kernel_require.rb:54:in `require' 14: from /usr/share/rubygems/rubygems/core_ext/kernel_require.rb:54:in `require' 13: from /usr/local/share/gems/gems/jekyll-sass-converter-2.0.0/lib/jekyll-sass-converter.rb:4:in `&lt;top (required)&gt;' 12: from /usr/share/rubygems/rubygems/core_ext/kernel_require.rb:54:in `require' 11: from /usr/share/rubygems/rubygems/core_ext/kernel_require.rb:54:in `require' 10: from /usr/local/share/gems/gems/jekyll-sass-converter-2.
+  
+  <div class="read-more-link">
+    <a href="/post/2019-09-07-02/">Read More…</a>
+  </div>
+  
+</article>
+</div>
+    </main>
+
+    
+  </body>
+</html>

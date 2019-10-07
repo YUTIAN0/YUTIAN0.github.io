@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>idea on My New Hugo Site</title>
+    <link>http://example.org/tags/idea/</link>
+    <description>Recent content in idea on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Sep 2019 21:38:41 +0800</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/idea/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JetBrians IDEA 使用api文档 </title>
+      <link>http://example.org/post/2019-09-27-05/</link>
+      <pubDate>Fri, 27 Sep 2019 21:38:41 +0800</pubDate>
+      
+      <guid>http://example.org/post/2019-09-27-05/</guid>
+      <description> JetBrians IDEA 使用api文档 jdk 11 api文档 在线地址https://docs.oracle.com/en/java/javase/11/docs/api/index.html 离线下载地址 https://www.oracle.com/technetwork/java/javase/documentation/jdk11-doc-downloads-5097203.html 使用idea时，鼠标指在上面没有显示说明 打开File-Settings&amp;hellip;,勾选如图所示选项 打开File-&amp;gt;Project Structure 选择文档位置 </description>
+    </item>
+    
+  </channel>
+</rss>

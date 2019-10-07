@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CentOS 开机自动挂载硬盘 &middot; My New Hugo Site</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="http://example.org/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="http://example.org/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="http://example.org/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="http://example.org/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://example.org/"><h1>My New Hugo Site</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="http://example.org/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>CentOS 开机自动挂载硬盘</h1>
+  <time datetime=2019-10-02T21:45:37&#43;0800 class="post-date">Wed, Oct 2, 2019</time>
+  
+
+<h1 id="centos-开机自动挂载硬盘">CentOS 开机自动挂载硬盘</h1>
+
+<p>/etc/fstab是Linux中负责开机引导自动挂载储存设备的配置文件</p>
+
+<pre><code>(base) [yutian@localhost ~]$ cat  /etc/fstab
+
+#
+# /etc/fstab
+# Created by anaconda on Mon Sep 30 01:35:47 2019
+#
+# Accessible filesystems, by reference, are maintained under '/dev/disk/'.
+# See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info.
+#
+# After editing this file, run 'systemctl daemon-reload' to update systemd
+# units generated from this file.
+#
+/dev/mapper/cl-root     /                       xfs     defaults        0 0
+UUID=f69a867c-4ded-44bb-b0b0-5f4b1abfc12d /boot                   ext4    defaults        1 2
+UUID=42FE-EDAC          /boot/efi               vfat    umask=0077,shortname=winnt 0 2
+/dev/mapper/cl-home     /home                   xfs     defaults        0 0
+/dev/mapper/cl-swap     swap                    swap    defaults        0 0
+/dev/md126              /mnt/data               ext4    defaults        0 0
+
+</code></pre>
+
+<p>共有六列，列之间使用空格分隔，每一行就是一个文件系统</p>
+
+<h5 id="第一列-分区名-设备id">第一列 分区名（设备ID）</h5>
+
+<p>可以使用设备名，设备的UUID，设备的卷标签（Lable）</p>
+
+<h5 id="第二列-挂载点">第二列 挂载点</h5>
+
+<p>挂载点必须为当前已经存在的目录，对于交换分区(swap)，这个字段定义为swap，如果在载入点的路径中包含空格符，可以用“/040”来替代空格符</p>
+
+<h5 id="第三列-文件系统类型">第三列 文件系统类型</h5>
+
+<p>此列要与分区格式化时使用的类型相同，也可以使用 auto 这一特殊的语法，使系统自动侦测目标分区的分区类型，auto通常用于可移动设备的挂载，使用<code>cat /proc/filesystems</code> 可以查看当前系统支持的类型</p>
+
+<h5 id="第四列-挂载参数">第四列 挂载参数</h5>
+
+<p>指定加载该设备的文件系统是需要使用的特定参数选项，多个参数是由逗号分隔开来。常见参数如下：<br />
+- auto: 系统自动挂载，fstab默认就是这个选项<br />
+-defaults: 最常见参数，可以满足需要大多数文件系统使用<br />
+- noauto 开机不自动挂载<br />
+- nouser 只有超级用户可以挂载<br />
+- ro 按只读权限挂载<br />
+- rw 按可读可写权限挂载<br />
+- user 任何用户都可以挂载<br />
+- 请注意光驱和软驱只有在装有介质时才可以进行挂载，因此它是noauto</p>
+
+<h4 id="第五列-dump备份设置">第五列 dump备份设置</h4>
+
+<p>当其值设置为1时，将允许dump备份程序备份；设置为0时，忽略备份操作；</p>
+
+<h4 id="第六列-开机磁盘检查顺序">第六列 开机磁盘检查顺序</h4>
+
+<p>数字越小越优先检查，如果两个分区的数字相同，则同时检查。当其值为0时，永远不检查。根”/”分区永远都为1。其它分区从2开始。</p>
+
+<h4 id="当修改完此文件并保存后-重启服务器生效">当修改完此文件并保存后，重启服务器生效。</h4>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>
