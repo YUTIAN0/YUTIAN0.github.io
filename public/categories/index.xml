@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on My New Hugo Site</title>
-    <link>http://example.org/categories/</link>
-    <description>Recent content in Categories on My New Hugo Site</description>
+    <title>Categories on yutian blog</title>
+    <link>https://yutian0.github.io/categories/</link>
+    <description>Recent content in Categories on yutian blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 06 Oct 2019 21:48:18 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yutian0.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>notes</title>
-      <link>http://example.org/categories/notes/</link>
+      <link>https://yutian0.github.io/categories/notes/</link>
       <pubDate>Sun, 06 Oct 2019 21:48:18 +0800</pubDate>
       
-      <guid>http://example.org/categories/notes/</guid>
+      <guid>https://yutian0.github.io/categories/notes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>blog</title>
-      <link>http://example.org/categories/blog/</link>
+      <link>https://yutian0.github.io/categories/blog/</link>
       <pubDate>Fri, 27 Sep 2019 21:38:41 +0800</pubDate>
       
-      <guid>http://example.org/categories/blog/</guid>
+      <guid>https://yutian0.github.io/categories/blog/</guid>
       <description></description>
     </item>
     

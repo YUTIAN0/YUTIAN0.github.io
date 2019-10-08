@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>http://example.org/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>yutian blog</title>
+    <link>https://yutian0.github.io/</link>
+    <description>Recent content on yutian blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 06 Oct 2019 21:48:18 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yutian0.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>miniDLNA配置 </title>
-      <link>http://example.org/post/2019-10-06-09/</link>
+      <link>https://yutian0.github.io/post/2019-10-06-09/</link>
       <pubDate>Sun, 06 Oct 2019 21:48:18 +0800</pubDate>
       
-      <guid>http://example.org/post/2019-10-06-09/</guid>
+      <guid>https://yutian0.github.io/post/2019-10-06-09/</guid>
       <description>miniDLNA配置 安装 sudo dnf install minidlna
 配置文件位置/etc/minidlna.conf
 sudo vim /etc/minidlna.conf media_dir=/opt #资源文件路径  启动服务sudo systemctl start minidlna
@@ -26,20 +26,20 @@ sudo vim /etc/minidlna.conf media_dir=/opt #资源文件路径  启动服务sudo
     
     <item>
       <title>CentOS 开机自动挂载硬盘</title>
-      <link>http://example.org/post/2019-10-02-08/</link>
+      <link>https://yutian0.github.io/post/2019-10-02-08/</link>
       <pubDate>Wed, 02 Oct 2019 21:45:37 +0800</pubDate>
       
-      <guid>http://example.org/post/2019-10-02-08/</guid>
+      <guid>https://yutian0.github.io/post/2019-10-02-08/</guid>
       <description>CentOS 开机自动挂载硬盘 /etc/fstab是Linux中负责开机引导自动挂载储存设备的配置文件
 (base) [yutian@localhost ~]$ cat /etc/fstab # # /etc/fstab # Created by anaconda on Mon Sep 30 01:35:47 2019 # # Accessible filesystems, by reference, are maintained under &#39;/dev/disk/&#39;. # See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info. # # After editing this file, run &#39;systemctl daemon-reload&#39; to update systemd # units generated from this file. # /dev/mapper/cl-root / xfs defaults 0 0 UUID=f69a867c-4ded-44bb-b0b0-5f4b1abfc12d /boot ext4 defaults 1 2 UUID=42FE-EDAC /boot/efi vfat umask=0077,shortname=winnt 0 2 /dev/mapper/cl-home /home xfs defaults 0 0 /dev/mapper/cl-swap swap swap defaults 0 0 /dev/md126 /mnt/data ext4 defaults 0 0  共有六列，列之间使用空格分隔，每一行就是一个文件系统</description>
     </item>
     
     <item>
       <title>Centos 8 安装常用软件</title>
-      <link>http://example.org/post/2019-09-30-07/</link>
+      <link>https://yutian0.github.io/post/2019-09-30-07/</link>
       <pubDate>Mon, 30 Sep 2019 20:21:16 +0800</pubDate>
       
-      <guid>http://example.org/post/2019-09-30-07/</guid>
+      <guid>https://yutian0.github.io/post/2019-09-30-07/</guid>
       <description>Centos 8安装常用软件
 安装epel sudo dnf install epel-release
 安装 RPMFusion
@@ -53,28 +53,28 @@ sudo dnf install gcc gcc-c++ wget git tree iftop ioftp vim samba samba-client sa
     
     <item>
       <title> CentOS 8发布</title>
-      <link>http://example.org/post/2019-09-27-06/</link>
+      <link>https://yutian0.github.io/post/2019-09-27-06/</link>
       <pubDate>Fri, 27 Sep 2019 22:49:08 +0800</pubDate>
       
-      <guid>http://example.org/post/2019-09-27-06/</guid>
+      <guid>https://yutian0.github.io/post/2019-09-27-06/</guid>
       <description>CentOS 8 发布 从redhat 8发布以来，一直等待CentOS 8的发布，足足等了三四个月，经常在https://wiki.centos.org/About/Building_8上查看构建工作，终于在 2019-09-24 正式发行。 CentOS 8构建时间表</description>
     </item>
     
     <item>
       <title>JetBrians IDEA 使用api文档 </title>
-      <link>http://example.org/post/2019-09-27-05/</link>
+      <link>https://yutian0.github.io/post/2019-09-27-05/</link>
       <pubDate>Fri, 27 Sep 2019 21:38:41 +0800</pubDate>
       
-      <guid>http://example.org/post/2019-09-27-05/</guid>
+      <guid>https://yutian0.github.io/post/2019-09-27-05/</guid>
       <description> JetBrians IDEA 使用api文档 jdk 11 api文档 在线地址https://docs.oracle.com/en/java/javase/11/docs/api/index.html 离线下载地址 https://www.oracle.com/technetwork/java/javase/documentation/jdk11-doc-downloads-5097203.html 使用idea时，鼠标指在上面没有显示说明 打开File-Settings&amp;hellip;,勾选如图所示选项 打开File-&amp;gt;Project Structure 选择文档位置 </description>
     </item>
     
     <item>
       <title>Markdown 基本语法</title>
-      <link>http://example.org/post/2019-09-08-03/</link>
+      <link>https://yutian0.github.io/post/2019-09-08-03/</link>
       <pubDate>Sun, 08 Sep 2019 18:15:00 +0800</pubDate>
       
-      <guid>http://example.org/post/2019-09-08-03/</guid>
+      <guid>https://yutian0.github.io/post/2019-09-08-03/</guid>
       <description>Markdown 基本语法 Markdown 标题 一级标题 ===(任意两个以上) # 一级标题 ## 二级标题 二级标题 --- ### 三级标题 #### 四级标题 ##### 五级标题 ###### 六级标题  显示效果
 一级标题 一级标题 二级标题 二级标题 三级标题 四级标题 五级标题 六级标题 Markdown 段落 段落的前后要有空行，所谓的空行是指没有文字内容。若想在段内强制换行的方式是使用两个以上空格加上回车（引用中换行省略回车）
 字体  *斜体文本* _斜体文本_ **粗体文本** __粗体文本__ ***粗斜体文本*** ___粗斜体文本___ ~~~~ *斜体文本* _斜体文本_ **粗体文本** __粗体文本__ ***粗斜体文本*** ___粗斜体文本___ ### 线条  ~~删除线~ 带下划线文本 文本 [^脚注] 水平线
@@ -84,10 +84,10 @@ sudo dnf install gcc gcc-c++ wget git tree iftop ioftp vim samba samba-client sa
     
     <item>
       <title>Markdown 语法</title>
-      <link>http://example.org/post/2019-09-08-04/</link>
+      <link>https://yutian0.github.io/post/2019-09-08-04/</link>
       <pubDate>Sun, 08 Sep 2019 18:15:00 +0800</pubDate>
       
-      <guid>http://example.org/post/2019-09-08-04/</guid>
+      <guid>https://yutian0.github.io/post/2019-09-08-04/</guid>
       <description>注:以下内容来自https://yuhongjun.github.io/  目录
 {:toc} 1. 斜体和粗体 *斜体*或_斜体_ **粗体** ***加粗斜体*** ~~删除线~~  view
   *斜体*或斜体
@@ -110,10 +110,10 @@ sudo dnf install gcc gcc-c++ wget git tree iftop ioftp vim samba samba-client sa
     
     <item>
       <title>GitHub Pages 搭建</title>
-      <link>http://example.org/post/2019-09-07-01/</link>
+      <link>https://yutian0.github.io/post/2019-09-07-01/</link>
       <pubDate>Sat, 07 Sep 2019 22:56:19 +0800</pubDate>
       
-      <guid>http://example.org/post/2019-09-07-01/</guid>
+      <guid>https://yutian0.github.io/post/2019-09-07-01/</guid>
       <description>GitHub Pages 搭建 GitHub帮助文档 https://help.github.com/
 注册GitHup账号 https://github.com/
 已经注册或已有账号 创建新的仓库 仓库名为 用户名.github.io
@@ -127,10 +127,10 @@ git clone git@github.com:YUTIAN0/YUTIAN0.github.io.git 或 git clone https://git
     
     <item>
       <title>jekyll -v 缺失libsass.so动态链接库</title>
-      <link>http://example.org/post/2019-09-07-02/</link>
+      <link>https://yutian0.github.io/post/2019-09-07-02/</link>
       <pubDate>Sat, 07 Sep 2019 22:56:19 +0800</pubDate>
       
-      <guid>http://example.org/post/2019-09-07-02/</guid>
+      <guid>https://yutian0.github.io/post/2019-09-07-02/</guid>
       <description>jekyll -v 缺失libsass.so动态链接库 环境 Windows Subsystem for Linux fedora30
 缺失/usr/local/share/gems/gems/sassc-2.2.0/lib/sassc/libsass.so  [root@DESKTOP-LJ3J01Q yutian]# jekyll -v Traceback (most recent call last): 21: from /usr/local/bin/jekyll:23:in `&amp;lt;main&amp;gt;&#39; 20: from /usr/local/bin/jekyll:23:in `load&#39; 19: from /usr/local/share/gems/gems/jekyll-4.0.0/exe/jekyll:8:in `&amp;lt;top (required)&amp;gt;&#39; 18: from /usr/share/rubygems/rubygems/core_ext/kernel_require.rb:54:in `require&#39; 17: from /usr/share/rubygems/rubygems/core_ext/kernel_require.rb:54:in `require&#39; 16: from /usr/local/share/gems/gems/jekyll-4.0.0/lib/jekyll.rb:206:in `&amp;lt;top (required)&amp;gt;&#39; 15: from /usr/share/rubygems/rubygems/core_ext/kernel_require.rb:54:in `require&#39; 14: from /usr/share/rubygems/rubygems/core_ext/kernel_require.rb:54:in `require&#39; 13: from /usr/local/share/gems/gems/jekyll-sass-converter-2.0.0/lib/jekyll-sass-converter.rb:4:in `&amp;lt;top (required)&amp;gt;&#39; 12: from /usr/share/rubygems/rubygems/core_ext/kernel_require.rb:54:in `require&#39; 11: from /usr/share/rubygems/rubygems/core_ext/kernel_require.rb:54:in `require&#39; 10: from /usr/local/share/gems/gems/jekyll-sass-converter-2.</description>
     </item>

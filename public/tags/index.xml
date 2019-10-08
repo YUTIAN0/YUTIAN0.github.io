@@ -1,103 +1,103 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on My New Hugo Site</title>
-    <link>http://example.org/tags/</link>
-    <description>Recent content in Tags on My New Hugo Site</description>
+    <title>Tags on yutian blog</title>
+    <link>https://yutian0.github.io/tags/</link>
+    <description>Recent content in Tags on yutian blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 06 Oct 2019 21:48:18 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yutian0.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>miniDLNA</title>
-      <link>http://example.org/tags/minidlna/</link>
+      <link>https://yutian0.github.io/tags/minidlna/</link>
       <pubDate>Sun, 06 Oct 2019 21:48:18 +0800</pubDate>
       
-      <guid>http://example.org/tags/minidlna/</guid>
+      <guid>https://yutian0.github.io/tags/minidlna/</guid>
       <description></description>
     </item>
     
     <item>
       <title>/etc/fstab</title>
-      <link>http://example.org/tags/etc/fstab/</link>
+      <link>https://yutian0.github.io/tags/etc/fstab/</link>
       <pubDate>Wed, 02 Oct 2019 21:45:37 +0800</pubDate>
       
-      <guid>http://example.org/tags/etc/fstab/</guid>
+      <guid>https://yutian0.github.io/tags/etc/fstab/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CentOS</title>
-      <link>http://example.org/tags/centos/</link>
+      <link>https://yutian0.github.io/tags/centos/</link>
       <pubDate>Wed, 02 Oct 2019 21:45:37 +0800</pubDate>
       
-      <guid>http://example.org/tags/centos/</guid>
+      <guid>https://yutian0.github.io/tags/centos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>api</title>
-      <link>http://example.org/tags/api/</link>
+      <link>https://yutian0.github.io/tags/api/</link>
       <pubDate>Fri, 27 Sep 2019 21:38:41 +0800</pubDate>
       
-      <guid>http://example.org/tags/api/</guid>
+      <guid>https://yutian0.github.io/tags/api/</guid>
       <description></description>
     </item>
     
     <item>
       <title>idea</title>
-      <link>http://example.org/tags/idea/</link>
+      <link>https://yutian0.github.io/tags/idea/</link>
       <pubDate>Fri, 27 Sep 2019 21:38:41 +0800</pubDate>
       
-      <guid>http://example.org/tags/idea/</guid>
+      <guid>https://yutian0.github.io/tags/idea/</guid>
       <description></description>
     </item>
     
     <item>
       <title>java</title>
-      <link>http://example.org/tags/java/</link>
+      <link>https://yutian0.github.io/tags/java/</link>
       <pubDate>Fri, 27 Sep 2019 21:38:41 +0800</pubDate>
       
-      <guid>http://example.org/tags/java/</guid>
+      <guid>https://yutian0.github.io/tags/java/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Markdown</title>
-      <link>http://example.org/tags/markdown/</link>
+      <link>https://yutian0.github.io/tags/markdown/</link>
       <pubDate>Sun, 08 Sep 2019 18:15:00 +0800</pubDate>
       
-      <guid>http://example.org/tags/markdown/</guid>
+      <guid>https://yutian0.github.io/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>GitHub Pages</title>
-      <link>http://example.org/tags/github-pages/</link>
+      <link>https://yutian0.github.io/tags/github-pages/</link>
       <pubDate>Sat, 07 Sep 2019 22:56:19 +0800</pubDate>
       
-      <guid>http://example.org/tags/github-pages/</guid>
+      <guid>https://yutian0.github.io/tags/github-pages/</guid>
       <description></description>
     </item>
     
     <item>
       <title>fedora</title>
-      <link>http://example.org/tags/fedora/</link>
+      <link>https://yutian0.github.io/tags/fedora/</link>
       <pubDate>Sat, 07 Sep 2019 22:56:19 +0800</pubDate>
       
-      <guid>http://example.org/tags/fedora/</guid>
+      <guid>https://yutian0.github.io/tags/fedora/</guid>
       <description></description>
     </item>
     
     <item>
       <title>jekyll</title>
-      <link>http://example.org/tags/jekyll/</link>
+      <link>https://yutian0.github.io/tags/jekyll/</link>
       <pubDate>Sat, 07 Sep 2019 22:56:19 +0800</pubDate>
       
-      <guid>http://example.org/tags/jekyll/</guid>
+      <guid>https://yutian0.github.io/tags/jekyll/</guid>
       <description></description>
     </item>
     

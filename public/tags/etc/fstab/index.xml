@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>/etc/fstab on My New Hugo Site</title>
-    <link>http://example.org/tags/etc/fstab/</link>
-    <description>Recent content in /etc/fstab on My New Hugo Site</description>
+    <title>/etc/fstab on yutian blog</title>
+    <link>https://yutian0.github.io/tags/etc/fstab/</link>
+    <description>Recent content in /etc/fstab on yutian blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 02 Oct 2019 21:45:37 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/tags/etc/fstab/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yutian0.github.io/tags/etc/fstab/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>CentOS 开机自动挂载硬盘</title>
-      <link>http://example.org/post/2019-10-02-08/</link>
+      <link>https://yutian0.github.io/post/2019-10-02-08/</link>
       <pubDate>Wed, 02 Oct 2019 21:45:37 +0800</pubDate>
       
-      <guid>http://example.org/post/2019-10-02-08/</guid>
+      <guid>https://yutian0.github.io/post/2019-10-02-08/</guid>
       <description>CentOS 开机自动挂载硬盘 /etc/fstab是Linux中负责开机引导自动挂载储存设备的配置文件
 (base) [yutian@localhost ~]$ cat /etc/fstab # # /etc/fstab # Created by anaconda on Mon Sep 30 01:35:47 2019 # # Accessible filesystems, by reference, are maintained under &#39;/dev/disk/&#39;. # See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info. # # After editing this file, run &#39;systemctl daemon-reload&#39; to update systemd # units generated from this file. # /dev/mapper/cl-root / xfs defaults 0 0 UUID=f69a867c-4ded-44bb-b0b0-5f4b1abfc12d /boot ext4 defaults 1 2 UUID=42FE-EDAC /boot/efi vfat umask=0077,shortname=winnt 0 2 /dev/mapper/cl-home /home xfs defaults 0 0 /dev/mapper/cl-swap swap swap defaults 0 0 /dev/md126 /mnt/data ext4 defaults 0 0  共有六列，列之间使用空格分隔，每一行就是一个文件系统</description>
     </item>
